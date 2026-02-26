@@ -22,28 +22,6 @@ The project separates:
 - **Bot logic** (`Bot`)
 - **UI layers** (`app/cli`, `app/gui`)
 
-## What I Implemented (Assignment Summary)
-
-- Core 2048 board mechanics (sliding, merging, valid move detection)
-- Game state management (`Playing`, `GameOver`, `Quitted`)
-- Restart and quit actions
-- Human input handling for both CLI and GUI
-- Bot toggle + bot step support
-- A simple deterministic bot strategy ("first valid move")
-- Rendering for terminal and graphical interfaces
-- Automated tests for core modules (`Quadruple`, `Grid4x4`, `Board`, `Game`, `Bot`)
-
-## Project Structure
-
-- `src/A2/Board.hs` - board representation and 2048 move logic
-- `src/A2/Game.hs` - game state + message/update logic
-- `src/A2/Bot.hs` - bot strategy
-- `src/A2/Grid4x4.hs`, `src/A2/Quadruple.hs` - data structures/utilities
-- `app/cli/Main.hs` - terminal version
-- `app/gui/Main.hs` - graphical version (Brillo)
-- `test/Main.hs` - unit tests
-- `Makefile` - shortcuts for build/test/run
-
 ## Requirements
 
 - GHC / Cabal (Haskell toolchain)
